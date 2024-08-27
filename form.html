@@ -3,118 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login form</title>
+    <title>Ordered List and Table</title>
     <style>
-        form {
-            max-width: 500px;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            background-color: #f9f9f9;
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
         }
-        label {
-            display: block;
-            margin-top: 10px;
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
         }
-        input[type="text"],
-        input[type="email"],
-        input[type="password"],
-        input[type="color"],
-        select,
-        input[type="file"] {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="radio"],
-        input[type="checkbox"] {
-            margin-right: 10px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            margin-top: 0;
-        }
-        .submit-btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .submit-btn:hover {
-            background-color: #45a049;
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-    <h2>user login</h2>
-    <form action="/submit" method="post">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        
-        <div class="form-group">
-            <label>Gender:</label>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label>
-        </div>
-        
-        <div class="form-group">
-            <label>Interests:</label>
-            <input type="checkbox" id="sports" name="interests" value="sports">
-            <label for="sports">Sports</label>
-            <input type="checkbox" id="music" name="interests" value="music">
-            <label for="music">Music</label>
-            <input type="checkbox" id="travel" name="interests" value="travel">
-            <label for="travel">Travel</label>
-            <input type="checkbox" id="reading" name="interests" value="reading">
-            <label for="reading">Reading</label>
-        </div>
-        
-        <div class="form-group">
-            <label for="color">Favorite Color:</label>
-            <input type="color" id="color" name="color">
-        </div>
-        
-        <div class="form-group">
-            <label for="country">Country:</label>
-            <select id="country" name="country">
-                <option value="india">INDIA</option>
-                <option value="canada">Canada</option>
-                <option value="uk">UK</option>
-                <option value="australia">Australia</option>
-                <option value="other">Other</option>
-            </select>
-        </div>
-        
-        <div class="form-group">
-            <label for="profile-pic">Profile Picture:</label>
-            <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
-        </div>
-        
-        <button type="submit" class="submit-btn">Submit</button>
-    </form>
+    <h2>Ordered List with Images</h2>
+    <ol>
+        <li>
+            <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 1" width="150" height="150">
+            Image 1
+        </li>
+        <li>
+            <img src="https://images.pexels.com/photos/981062/pexels-photo-981062.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2" width="150" height="150">
+            Image 2
+        </li>
+        <li>
+            <img src="https://images.pexels.com/photos/1643457/pexels-photo-1643457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3" width="150" height="150">
+            Image 3
+        </li>
+    </ol>
+    <h2>Simple Table</h2>
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+            <td>Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+            <td>Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Cell 1</td>
+            <td>Row 3, Cell 2</td>
+            <td>Row 3, Cell 3</td>
+        </tr>
+    </table>
 </body>
 </html>
+
